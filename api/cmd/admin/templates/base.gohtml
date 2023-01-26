@@ -1,0 +1,32 @@
+{{define "base"}}
+<!DOCTYPE HTML>
+    <html>
+<head>
+<title>
+{{block "title" .}}
+
+{{end}}
+</title>
+
+
+{{block "style" .}}
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        body {
+            font-family: 'Sofia Sans', sans-serif;
+        }
+
+    </style>
+
+{{end}}
+
+</head>
+        <body>
+            {{block "content" .}}
+              <div class="users-graph">
+                
+              </div>
+            {{end}}
+        </body>
+</html>
+{{end}}

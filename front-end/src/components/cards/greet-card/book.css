@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:ital,wght@0,300;0,500;1,900&family=Sofia+Sans&display=swap');
+
+.content {
+    height: 100%;
+    width: 100%;
+}
+
+.resume {
+    text-decoration: none;
+    color: crimson;
+}
+
+.book-cont {
+    height: 30%;
+    width: 80%;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 25px;
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    align-items: stretch;
+    float: flex;
+    box-shadow: 12px 12px 2px 1px #624b49;
+    margin-right: 10px;
+    transition: all 1s ease-in-out;
+}
+
+.book-cont:hover {
+    box-shadow: 2px 1px 12px 12px #624b49;
+    padding: 20px;
+}
+
+.book-title {
+    width: 100%;
+    padding: 15px;
+    float: left;
+    font-size: 30px;
+}
+
+.book-title::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.book-title:hover::after {
+    content: '';
+    width: 90%;
+    height: 2px;
+    background-color: crimson;
+    display: block;
+}
+
+.book-desc {
+    margin-left: 10px;
+    float: left;
+    font-size: 20px;    
+    width: 90%;
+}
+
+
+.read-mr1 {
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: whitesmoke;
+    border: none;
+    height: 45px;
+    margin-top: 80px;
+    width: 150px;
+    color: crimson;
+    border: 1px solid #000;
+    transition: all 1s ease-in-out;
+}
+
+.read-mr1:hover {
+    width: 190px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    background-color: crimson;
+}

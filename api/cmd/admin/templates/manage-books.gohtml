@@ -1,0 +1,33 @@
+{{template "base" .}}
+
+{{define "title"}}
+  Managing books
+{{end}}
+
+{{define "style"}}
+  
+{{end}}
+    <link href="book-card.css.css" rel="stylesheet" >
+<body>
+
+    <div class="content">
+      {{ range $i, $book := .Data "books" }}
+      <div class="record">
+        <h1>Book {{$i}}</h1>
+        <div className="book-card">
+            {{$book.Title}}
+            {{$book.Amount}}
+            {{$book.Image}}
+            {{$book.IsAvaliable}}
+            {{$book.CreatedAt}}
+          <a class="details" href="/details/{{$book.ID}}" ></a>
+          <a class="update"  href="/update/{{$book.ID}}" ></a>
+          <a class="delete"  href="/delete/{{$book.ID}}" ></a>
+        </div>
+      {{end}}
+
+        </div>
+    </div>
+</body>
+
+</html>

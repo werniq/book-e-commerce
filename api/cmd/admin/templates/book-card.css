@@ -1,0 +1,37 @@
+.content {
+    marign-top: 50px;
+    height: 100%;
+    width: 90%;
+    background-color: #15b097;
+    border-radius: 15px;
+    border: 2px solid #624b49;
+}
+
+.record {
+    margin-top: 50px;
+}
+
+.details {
+    width: 10%;
+    float: right;
+    margin-left: -25px;
+}
+
+
+.update {
+    width: 10%;
+    float: right;
+    margin-left: 0px;
+}
+
+
+.delete {
+    width: 10%;
+    float: right;
+    margin-left: 25px;
+}
+
+
+.book-card {
+    height: 65px;
+}

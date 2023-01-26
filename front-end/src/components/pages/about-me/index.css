@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:ital,wght@0,300;0,500;1,900&family=Sofia+Sans&display=swap');
+
+.home {
+    width: 1920px;
+    height: 1080px;
+    justify-content: space-between;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+
+.content {
+    height: 100%;
+    width: 100%;
+}
+
+.big-cont1 {
+    border-radius: 5px;
+    height: 400px;
+    width: 700px;
+    padding: 15px;
+    margin-top: -750px;
+    margin-left: 100px;
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    /* float: center; */
+    box-shadow: 12px 12px 2px 1px #624b49;
+    margin-right: 20px;
+    transition: all 1s ease-in-out;
+}
+
+.big-cont1:hover {
+    box-shadow: 2px 1px 12px 12px #624b49;
+    padding: 20px;
+}
+
+.big-title1 {
+    width: 100%;
+    /* margin-top: -585px; */
+    padding: 15px;
+    float: left;
+    font-size: 30px;
+}
+
+.big-title1::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 10px;
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.big-title1:hover::after {
+    content: '';
+    width: 90%;
+    height: 2px;
+    background-color: #15b097;
+    display: block;
+}
+
+.big-desc1 {
+    margin-left: 10px;
+    font-size: 20px;    
+    margin-top: 50px;
+    width: 90%;
+}
+
+.read-mr1 {
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: whitesmoke;
+    border: none;
+    height: 45px;
+    margin-top: 80px;
+    width: 150px;
+    color: crimson;
+    border: 1px solid #000;
+    transition: all 1s ease-in-out;
+}
+
+.read-mr1:hover {
+    width: 190px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    background-color: crimson;
+    /* background-color: linear-gradient(135deg, orange 60%, cyan); */
+}

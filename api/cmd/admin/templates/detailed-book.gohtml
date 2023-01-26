@@ -1,0 +1,56 @@
+{{template "base" .}}
+
+{{define "title"}}
+  Managing books
+{{end}}
+
+{{define "style"}}
+      <style>
+          body {
+              background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%),
+              linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%),
+              linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+              radial-gradient(gray 2px, transparent 0);
+              background-size: 30px 30px, 30px 30px;
+          }
+
+          .book-card {
+            background-color: #17bebb;
+            width: 60%;
+            height: 35%;
+            border: 1px solid #1a5e63;
+            border-radius: 15px;
+          }
+
+          .update {
+              width: 5%;
+              float: right;
+              margin-left: 0px;
+          }
+
+          .delete {
+              width: 5%;
+              float: right;
+              margin-left: 25px;
+          }
+      </style>
+{{end}}
+<link href="book-card.css.css" rel="stylesheet">
+<body>
+
+<div class="content">
+  <div class="book-card">
+    {{$book := index .Data "book" }}
+    <h1>Book {{$book.ID}}</h1>
+        {{$book.Title}}
+        {{$book.Amount}}
+        {{$book.Image}}
+        {{$book.IsAvaliable}}
+        {{$book.CreatedAt}}
+        <a class="update"  href="/update/{{$book.ID}}" ></a>
+        <a class="delete"  href="/delete/{{$book.ID}}" ></a>
+      </div>
+    </div>
+</body>
+
+</html>
